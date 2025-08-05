@@ -81,12 +81,10 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-sunoaki-rk3339-vmhost"
         type: choice
         options:
-          - -ophub
-          - -yourname
-
+          - "-sunoaki-rk3399-vmhost"
 env:
   TZ: America/New_York
 
