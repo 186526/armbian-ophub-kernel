@@ -94,9 +94,10 @@ on:
       docker_image:
         description: "Select Armbian docker image"
         required: false
-        default: "bookworm"
+        default: "trixie"
         type: choice
         options:
+          - trixie
           - jammy
           - noble
           - bookworm
@@ -182,7 +183,7 @@ jobs:
           kernel_patch: ${{ inputs.kernel_patch }}
           auto_patch: ${{ inputs.auto_patch }}
           compress_format: ${{ inputs.compress_format }}
-          kernel_sign: -beta
+          kernel_sign: -sunoaki-rk3399-vmhost
           delete_source: true
           silent_log: false
 
